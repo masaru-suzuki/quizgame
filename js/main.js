@@ -51,6 +51,7 @@
     btn.classList.add('disabled')
 
     question.textContent = quizSet[currentNum].q;
+    //次の問題に行ったときに前の選択肢を消す
     while (choices.firstChild) {
       choices.removeChild(choices.firstChild);
     }
